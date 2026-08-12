@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Vibe Store | BTS Cards & K-Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🇰🇷 K-Vibe Store</div>
+        <nav>
+            <a href="#cards">Photo Cards</a>
+            <a href="#foods">K-Food</a>
+            <button id="cart-btn" onclick="toggleCart()">🛒 Carrinho (<span id="cart-count">0</span>)</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Explore a Cultura K-Pop e K-Food</h1>
+        <p>Os melhores Photo Cards originais do BTS e as comidinhas coreanas mais amadas dos Doramas em um só lugar!</p>
+    </section>
+
+    <main>
+        <h2 id="cards">✨ BTS Photo Cards</h2>
+        <div class="grid" id="bts-cards">
+            <!-- Os itens serão inseridos via JavaScript para facilitar manutenção -->
+        </div>
+
+        <h2 id="foods">🍜 Delícias Coreanas (K-Food)</h2>
+        <div class="grid" id="k-food"></div>
+    </main>
+
+    <!-- Modal do Carrinho de Compras -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <h3>Seu Carrinho</h3>
+            <span class="close-btn" onclick="toggleCart()">&times;</span>
+            <div id="cart-items"></div>
+            <div class="cart-total">Total: R$ <span id="cart-total-val">0.00</span></div>
+            <button class="checkout-btn" onclick="checkout()">Finalizar Compra via WhatsApp</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 K-Vibe Store. Feito com ❤️ para Armys e K-Dishes.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
