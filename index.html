@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K-Vibe Store | BTS Cards & K-Food</title>
+    <title>K-Vibe Store | BTS & K-Food Culture</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,6 +11,7 @@
     <header>
         <div class="logo">🇰🇷 K-Vibe Store</div>
         <nav>
+            <a href="#cultura">A Cultura</a>
             <a href="#cards">Photo Cards</a>
             <a href="#foods">K-Food</a>
             <button id="cart-btn" onclick="toggleCart()">🛒 Carrinho (<span id="cart-count">0</span>)</button>
@@ -19,16 +20,33 @@
 
     <section class="hero">
         <h1>Explore a Cultura K-Pop e K-Food</h1>
-        <p>Os melhores Photo Cards originais do BTS e as comidinhas coreanas mais amadas dos Doramas em um só lugar!</p>
+        <p>Conectamos você ao universo do BTS e aos sabores tradicionais mais amados da Coreia do Sul.</p>
+    </section>
+
+    <!-- NOVA SEÇÃO: Contexto Cultural -->
+    <section id="cultura" class="culture-section">
+        <div class="culture-block">
+            <h2>✨ A Febre dos Photo Cards</h2>
+            <p>No universo do K-Pop, os <strong>Photo Cards</strong> são muito mais do que simples papéis impressos. Eles nasceram como brindes dentro dos álbuns físicos, mas se transformaram em verdadeiros itens de colecionador altamente valiosos. Para os Armys, colecionar os cards oficiais do <strong>BTS</strong> é uma forma de demonstrar apoio ao grupo, guardar uma memória física de cada era ("Proof", "Butter", "Be") e trocar raridades com outros fãs ao redor do mundo.</p>
+        </div>
+        
+        <div class="culture-block">
+            <h2>🍜 A Culinária das Telas (K-Food)</h2>
+            <p>Se você já assistiu a um dorama ou a um episódio de <i>Run BTS!</i>, com certeza ficou com água na boca. A culinária coreana (<strong>K-Food</strong>) é baseada em equilíbrio, fermentação e muita personalidade. Pratos como o <strong>Tteokbokki</strong> (massa de arroz apimentada) e o tradicional acompanhamento <strong>Kimchi</strong> representam o conforto e a identidade da vida coreana. Comer um lamen bem quente assistindo ao seu idol favorito é o ritual perfeito de imersão nessa cultura.</p>
+        </div>
     </section>
 
     <main>
-        <h2 id="cards">✨ BTS Photo Cards</h2>
-        <div class="grid" id="bts-cards">
-            <!-- Os itens serão inseridos via JavaScript para facilitar manutenção -->
+        <div class="section-title-wrapper">
+            <h2 id="cards">✨ BTS Photo Cards Originais</h2>
+            <p class="section-subtitle">Complete sua coleção com os cards mais desejados do momento.</p>
         </div>
+        <div class="grid" id="bts-cards"></div>
 
-        <h2 id="foods">🍜 Delícias Coreanas (K-Food)</h2>
+        <div class="section-title-wrapper">
+            <h2 id="foods">🍜 Delícias Coreanas (Mercado K-Food)</h2>
+            <p class="section-subtitle">Traga o sabor de Seul direto para a sua cozinha.</p>
+        </div>
         <div class="grid" id="k-food"></div>
     </main>
 
@@ -44,7 +62,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 K-Vibe Store. Feito com ❤️ para Armys e K-Dishes.</p>
+        <p>&copy; 2026 K-Vibe Store. Feito com ❤️ para Armys e K-Food Lovers.</p>
     </footer>
 
     <script src="script.js"></script>
